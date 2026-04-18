@@ -1,0 +1,186 @@
+2026-04-16 14:04:04,054 [INFO] Device: cuda
+2026-04-16 14:04:04,055 [INFO] Evaluating 10 generation(s) from google/gemma-2-2b
+2026-04-16 14:04:04,055 [INFO] Downloading WikiText-2 validation split as reference corpus...
+2026-04-16 14:04:04,182 [INFO] PyTorch version 2.10.0 available.
+2026-04-16 14:04:07,039 [INFO] Reference corpus ready: 200 sentences
+2026-04-16 14:04:07,077 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:04:07,077 [INFO] Generation 1
+2026-04-16 14:04:07,077 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:04:07,104 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:04:07,104 [INFO]   Loading checkpoint: checkpoints/gen_001
+2026-04-16 14:04:14,611 [INFO] Based on the current allocation process, no modules could be assigned to the following devices due to insufficient memory:
+  - 0: 1335379968 bytes required
+  - 1: 1179648000 bytes required
+  - 2: 1179648000 bytes required
+  - 3: 1179648000 bytes required
+  - 4: 1179648000 bytes required
+  - 5: 1179648000 bytes required
+These minimum requirements are specific to this allocation attempt and may vary. Consider increasing the available memory for these devices to at least the specified minimum, or adjusting the model config.
+2026-04-16 14:04:15,431 [INFO]   Computing held-out perplexity...
+2026-04-16 14:04:43,377 [INFO] Device: cuda
+2026-04-16 14:04:43,378 [INFO] Evaluating 10 generation(s) from google/gemma-2-2b
+2026-04-16 14:04:43,378 [INFO] Downloading WikiText-2 validation split as reference corpus...
+2026-04-16 14:04:43,439 [INFO] PyTorch version 2.10.0 available.
+2026-04-16 14:04:45,000 [INFO] Reference corpus ready: 200 sentences
+2026-04-16 14:04:45,021 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:04:45,021 [INFO] Generation 1
+2026-04-16 14:04:45,021 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:04:45,046 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:04:45,046 [INFO]   Loading checkpoint: checkpoints/gen_001
+2026-04-16 14:04:48,538 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:05:18,994 [INFO]   Computing held-out perplexity...
+2026-04-16 14:05:28,357 [INFO]   Perplexity:          18.1953
+2026-04-16 14:05:28,362 [INFO]   Computing Self-BLEU...
+2026-04-16 14:05:49,205 [INFO]   Self-BLEU:           0.234578
+2026-04-16 14:05:49,216 [INFO]   TTR:                 0.9346
+2026-04-16 14:05:49,232 [INFO]   Unigram entropy:     10.7506
+2026-04-16 14:05:49,255 [INFO]   N-gram repetition:   0.0476
+2026-04-16 14:05:49,262 [INFO]   Unique token ratio:  0.1538
+2026-04-16 14:05:49,263 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:05:49,263 [INFO] Generation 2
+2026-04-16 14:05:49,263 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:05:49,305 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:05:49,306 [INFO]   Loading checkpoint: checkpoints/gen_002
+2026-04-16 14:05:50,620 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:06:21,650 [INFO]   Computing held-out perplexity...
+2026-04-16 14:06:30,520 [INFO]   Perplexity:          29.8878
+2026-04-16 14:06:30,527 [INFO]   Computing Self-BLEU...
+2026-04-16 14:06:44,411 [INFO]   Self-BLEU:           0.287668
+2026-04-16 14:06:44,423 [INFO]   TTR:                 0.9651
+2026-04-16 14:06:44,440 [INFO]   Unigram entropy:     10.7451
+2026-04-16 14:06:44,477 [INFO]   KL from gen 1:       0.883284
+2026-04-16 14:06:44,506 [INFO]   N-gram repetition:   0.0660
+2026-04-16 14:06:44,515 [INFO]   Unique token ratio:  0.1233
+2026-04-16 14:06:44,580 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:06:44,583 [INFO] Generation 3
+2026-04-16 14:06:44,584 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:06:44,627 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:06:44,628 [INFO]   Loading checkpoint: checkpoints/gen_003
+2026-04-16 14:06:45,930 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:07:29,715 [INFO]   Computing held-out perplexity...
+2026-04-16 14:07:38,865 [INFO]   Perplexity:          56.5731
+2026-04-16 14:07:38,872 [INFO]   Computing Self-BLEU...
+2026-04-16 14:07:52,603 [INFO]   Self-BLEU:           0.370336
+2026-04-16 14:07:52,616 [INFO]   TTR:                 0.9684
+2026-04-16 14:07:52,636 [INFO]   Unigram entropy:     10.6410
+2026-04-16 14:07:52,674 [INFO]   KL from gen 1:       0.957617
+2026-04-16 14:07:52,705 [INFO]   N-gram repetition:   0.1138
+2026-04-16 14:07:52,714 [INFO]   Unique token ratio:  0.1076
+2026-04-16 14:07:52,780 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:07:52,781 [INFO] Generation 4
+2026-04-16 14:07:52,783 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:07:52,829 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:07:52,830 [INFO]   Loading checkpoint: checkpoints/gen_004
+2026-04-16 14:07:54,129 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:08:27,042 [INFO]   Computing held-out perplexity...
+2026-04-16 14:08:35,943 [INFO]   Perplexity:          94.1129
+2026-04-16 14:08:35,950 [INFO]   Computing Self-BLEU...
+2026-04-16 14:08:49,636 [INFO]   Self-BLEU:           0.457883
+2026-04-16 14:08:49,649 [INFO]   TTR:                 0.9693
+2026-04-16 14:08:49,668 [INFO]   Unigram entropy:     10.5873
+2026-04-16 14:08:49,705 [INFO]   KL from gen 1:       1.065445
+2026-04-16 14:08:49,736 [INFO]   N-gram repetition:   0.1784
+2026-04-16 14:08:49,745 [INFO]   Unique token ratio:  0.1006
+2026-04-16 14:08:49,807 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:08:49,808 [INFO] Generation 5
+2026-04-16 14:08:49,809 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:08:49,847 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:08:49,847 [INFO]   Loading checkpoint: checkpoints/gen_005
+2026-04-16 14:08:51,048 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:09:12,711 [INFO]   Computing held-out perplexity...
+2026-04-16 14:09:21,666 [INFO]   Perplexity:          151.4063
+2026-04-16 14:09:21,673 [INFO]   Computing Self-BLEU...
+2026-04-16 14:09:35,336 [INFO]   Self-BLEU:           0.534047
+2026-04-16 14:09:35,349 [INFO]   TTR:                 0.9683
+2026-04-16 14:09:35,368 [INFO]   Unigram entropy:     10.4736
+2026-04-16 14:09:35,410 [INFO]   KL from gen 1:       1.144475
+2026-04-16 14:09:35,442 [INFO]   N-gram repetition:   0.2633
+2026-04-16 14:09:35,450 [INFO]   Unique token ratio:  0.0901
+2026-04-16 14:09:35,516 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:09:35,517 [INFO] Generation 6
+2026-04-16 14:09:35,518 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:09:35,565 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:09:35,565 [INFO]   Loading checkpoint: checkpoints/gen_006
+2026-04-16 14:09:36,825 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:10:13,851 [INFO]   Computing held-out perplexity...
+2026-04-16 14:10:23,066 [INFO]   Perplexity:          194.4860
+2026-04-16 14:10:23,074 [INFO]   Computing Self-BLEU...
+2026-04-16 14:10:36,925 [INFO]   Self-BLEU:           0.625405
+2026-04-16 14:10:36,938 [INFO]   TTR:                 0.9674
+2026-04-16 14:10:36,956 [INFO]   Unigram entropy:     10.4250
+2026-04-16 14:10:36,992 [INFO]   KL from gen 1:       1.295310
+2026-04-16 14:10:37,021 [INFO]   N-gram repetition:   0.3676
+2026-04-16 14:10:37,029 [INFO]   Unique token ratio:  0.0824
+2026-04-16 14:10:37,097 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:10:37,098 [INFO] Generation 7
+2026-04-16 14:10:37,099 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:10:37,119 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:10:37,119 [INFO]   Loading checkpoint: checkpoints/gen_007
+2026-04-16 14:10:38,085 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:10:39,060 [INFO]   Computing held-out perplexity...
+2026-04-16 14:10:47,763 [INFO]   Perplexity:          284.0988
+2026-04-16 14:10:47,770 [INFO]   Computing Self-BLEU...
+2026-04-16 14:11:01,503 [INFO]   Self-BLEU:           0.707168
+2026-04-16 14:11:01,515 [INFO]   TTR:                 0.9656
+2026-04-16 14:11:01,532 [INFO]   Unigram entropy:     10.3019
+2026-04-16 14:11:01,567 [INFO]   KL from gen 1:       1.412796
+2026-04-16 14:11:01,596 [INFO]   N-gram repetition:   0.4730
+2026-04-16 14:11:01,605 [INFO]   Unique token ratio:  0.0725
+2026-04-16 14:11:01,667 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:11:01,667 [INFO] Generation 8
+2026-04-16 14:11:01,669 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:11:01,690 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:11:01,690 [INFO]   Loading checkpoint: checkpoints/gen_008
+2026-04-16 14:11:02,668 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:11:03,650 [INFO]   Computing held-out perplexity...
+2026-04-16 14:11:12,326 [INFO]   Perplexity:          376.7206
+2026-04-16 14:11:12,333 [INFO]   Computing Self-BLEU...
+2026-04-16 14:11:26,107 [INFO]   Self-BLEU:           0.783510
+2026-04-16 14:11:26,119 [INFO]   TTR:                 0.9663
+2026-04-16 14:11:26,135 [INFO]   Unigram entropy:     10.1714
+2026-04-16 14:11:26,168 [INFO]   KL from gen 1:       1.537445
+2026-04-16 14:11:26,197 [INFO]   N-gram repetition:   0.5948
+2026-04-16 14:11:26,205 [INFO]   Unique token ratio:  0.0612
+2026-04-16 14:11:26,260 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:11:26,261 [INFO] Generation 9
+2026-04-16 14:11:26,262 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:11:26,281 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:11:26,281 [INFO]   Loading checkpoint: checkpoints/gen_009
+2026-04-16 14:11:27,183 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:11:28,174 [INFO]   Computing held-out perplexity...
+2026-04-16 14:11:36,745 [INFO]   Perplexity:          463.2736
+2026-04-16 14:11:36,752 [INFO]   Computing Self-BLEU...
+2026-04-16 14:11:50,632 [INFO]   Self-BLEU:           0.830931
+2026-04-16 14:11:50,643 [INFO]   TTR:                 0.9667
+2026-04-16 14:11:50,660 [INFO]   Unigram entropy:     10.0896
+2026-04-16 14:11:50,694 [INFO]   KL from gen 1:       1.655565
+2026-04-16 14:11:50,723 [INFO]   N-gram repetition:   0.6841
+2026-04-16 14:11:50,731 [INFO]   Unique token ratio:  0.0533
+2026-04-16 14:11:50,789 [INFO] 
+────────────────────────────────────────────────────────
+2026-04-16 14:11:50,789 [INFO] Generation 10
+2026-04-16 14:11:50,790 [INFO] ────────────────────────────────────────────────────────
+2026-04-16 14:11:50,810 [INFO]   Loaded 500 training samples from records
+2026-04-16 14:11:50,810 [INFO]   Loading checkpoint: checkpoints/gen_010
+2026-04-16 14:11:52,069 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-16 14:11:52,909 [INFO]   Computing held-out perplexity...
+2026-04-16 14:12:01,528 [INFO]   Perplexity:          382.5219
+2026-04-16 14:12:01,535 [INFO]   Computing Self-BLEU...
+2026-04-16 14:12:15,305 [INFO]   Self-BLEU:           0.887678
+2026-04-16 14:12:15,317 [INFO]   TTR:                 0.9673
+2026-04-16 14:12:15,334 [INFO]   Unigram entropy:     9.9155
+2026-04-16 14:12:15,367 [INFO]   KL from gen 1:       1.690008
+2026-04-16 14:12:15,396 [INFO]   N-gram repetition:   0.7703
+2026-04-16 14:12:15,404 [INFO]   Unique token ratio:  0.0442
+2026-04-16 14:12:15,464 [INFO] 
+📊 Full results saved → checkpoints/eval_results.json
