@@ -69,8 +69,58 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--resume_from", default=None,
-        help="Path to a checkpoint directory to resume training from",
+        help=(
+            "Resume from a local checkpoint dir OR a HuggingFace Hub path. "
+            "Local:  checkpoints/gen_007  "
+            "HF Hub: username/self-consuming-gemma@gen_007  "
+            "The generation number is auto-detected from the path/branch name."
+        ),
     )
+    parser.add_argument(
+        "--resume_generation", type=int, default=None,
+        help=(
+            "Override auto-detected start generation (last gen already done). "
+            "Loop runs from resume_generation+1 to num_generations."
+        ),
+    )
+
+    # ── Pile prompts ──────────────────────────────────────────
+    parser.add_argument(
+        "--use_pile_prompts", action="store_true",
+        help="Draw seed prompts from The Pile instead of static strings",
+    )
+    parser.add_argument(
+        "--pile_subset", default="",
+        help="Pile subset/config name passed to datasets.load_dataset. Leave empty for datasets with no subsets (e.g. monology/pile-uncopyrighted).",
+    )
+    parser.add_argument(
+        "--pile_prompt_pool_size", type=int, default=1000,
+        help="Number of Pile prompts to cache at loop start",
+    )
+
+    # ── HuggingFace Hub ───────────────────────────────────────
+    parser.add_argument(
+        "--hf_repo_id", default=None,
+        help="HF Hub repo ID to push checkpoints to, e.g. 'username/self-consuming-gemma'",
+    )
+    parser.add_argument(
+        "--no_hf_push", action="store_true",
+        help="Disable automatic Hub push even when --hf_repo_id is set",
+    )
+    parser.add_argument(
+        "--hf_only", action="store_true",
+        help=(
+            "Use HF Hub as the sole checkpoint store. "
+            "Each generation loads its starting weights from the previously "
+            "pushed Hub branch instead of a local directory. "
+            "On first run, auto-resumes from the latest gen_NNN branch found on Hub."
+        ),
+    )
+    parser.add_argument(
+        "--hf_delete_local", action="store_true",
+        help="Delete the local checkpoint directory after each successful Hub push.",
+    )
+
     return parser.parse_args()
 
 
@@ -91,10 +141,22 @@ def main() -> None:
         learning_rate=args.learning_rate,
         checkpoint_dir=args.checkpoint_dir,
         logs_dir=args.logs_dir,
+        # Pile
+        use_pile_prompts=args.use_pile_prompts,
+        pile_subset=args.pile_subset,
+        pile_prompt_pool_size=args.pile_prompt_pool_size,
+        # HuggingFace Hub
+        hf_repo_id=args.hf_repo_id,
+        hf_push_each_gen=not args.no_hf_push,
+        hf_only=args.hf_only,
+        hf_delete_local_after_push=args.hf_delete_local,
     )
 
     loop = SelfConsumingLoop(cfg)
-    loss_history = loop.run(start_model_path=args.resume_from)
+    loss_history = loop.run(
+        start_model_path=args.resume_from,
+        start_generation=args.resume_generation,
+    )
 
     print("\nFinal loss trajectory:")
     for i, loss in enumerate(loss_history, start=1):

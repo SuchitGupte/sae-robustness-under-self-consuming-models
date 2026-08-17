@@ -3,6 +3,7 @@ config.py — Configuration dataclass for the self-consuming loop.
 """
 
 from dataclasses import dataclass, field
+from typing import Optional
 
 
 @dataclass
@@ -32,3 +33,19 @@ class LoopConfig:
     diversity_threshold: float = 0.3   # Unique token ratio below this → warning
     repetition_threshold: float = 0.5  # Repeated n-gram ratio above this → warning
     perplexity_spike_factor: float = 3.0  # PPL increased by this factor → warning
+
+    # ── Pile prompt settings ──────────────────────────────────
+    use_pile_prompts: bool = False
+    pile_dataset_name: str = "monology/pile-uncopyrighted"
+    pile_subset: str = ""       # empty → no subset (monology/pile-uncopyrighted has none)
+    pile_prompt_pool_size: int = 1000  # Prompts to cache at loop start
+    pile_prompt_min_chars: int = 40    # Min chars for a valid prompt snippet
+    pile_prompt_max_chars: int = 120   # Max chars to keep as prompt prefix
+
+    # ── HuggingFace Hub settings ──────────────────────────────
+    hf_repo_id: Optional[str] = None   # e.g. "username/self-consuming-gemma"
+    hf_token: Optional[str] = None     # HF write token (or set HF_TOKEN env var)
+    hf_push_each_gen: bool = True      # Push after every generation
+    hf_only: bool = False              # Use HF Hub as sole checkpoint store:
+                                       #   load next gen from Hub, not local dir
+    hf_delete_local_after_push: bool = False  # Delete local ckpt after Hub push
