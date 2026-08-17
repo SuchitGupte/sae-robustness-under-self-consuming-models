@@ -1,0 +1,32 @@
+2026-08-14 20:00:11 | [run] p160m-mix25-synthetic-20260814-200010 started 2026-08-14 20:00:10 | 1 visible GPU(s)
+2026-08-14 20:00:11 | [run] args: {"model": "p160m", "generations": 10, "resume_gen": 5, "repo": "suchitg/generations-p160m", "real_percent": 25.0, "lineage": "synthetic", "run_name": "p160m-mix25-synthetic-20260814-200010", "tmp_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/tmp", "dataset": "monology/pile-uncopyrighted", "dataset_config": "default", "split": "train", "text_column": "text", "seq_len": 512, "blocks_per_gen": 2000, "eval_blocks": 100, "metric_blocks": 64, "max_ngram": 4, "epochs": 1.0, "lr": 1e-05, "batch_size": 4, "grad_accum": 4, "grad_ckpt": false, "device_map": null, "gen_batch_size": 16, "temperature": 1.0, "top_p": 1.0, "out_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/runs", "seed": 0, "bf16": true, "tag": "mix25", "is_gemma": false, "device": "cuda"}
+2026-08-14 20:00:35 | [data] real pool: 20100 blocks of 512 tokens
+2026-08-14 20:00:41 | [init] resumed synthetic at gen5
+2026-08-14 20:00:55 | [gen]  sampled 64 blocks
+2026-08-14 20:00:56 | [score] synthetic gen5 | ppl=25.91 | entropy=1.866 nats | distinct-1..n=0.069/0.352/0.556/0.652
+2026-08-14 20:00:57 | === synthetic | gen 6/10 | 500 real + 1500 synthetic blocks ===
+2026-08-14 20:06:01 | [gen]  sampled 1500 blocks
+2026-08-14 20:06:47 | [gen]  sampled 64 blocks
+2026-08-14 20:06:48 | [score] synthetic gen6 | ppl=26.20 | entropy=1.672 nats | distinct-1..n=0.049/0.287/0.495/0.591
+2026-08-14 20:06:55 | [push] suchitg/generations-p160m/mix25/synthetic/gen6
+2026-08-14 20:06:56 | === synthetic | gen 7/10 | 500 real + 1500 synthetic blocks ===
+2026-08-14 20:12:49 | [gen]  sampled 1500 blocks
+2026-08-14 20:13:36 | [gen]  sampled 64 blocks
+2026-08-14 20:13:36 | [score] synthetic gen7 | ppl=26.25 | entropy=1.241 nats | distinct-1..n=0.043/0.219/0.363/0.441
+2026-08-14 20:13:43 | [push] suchitg/generations-p160m/mix25/synthetic/gen7
+2026-08-14 20:13:44 | === synthetic | gen 8/10 | 500 real + 1500 synthetic blocks ===
+2026-08-14 20:19:37 | [gen]  sampled 1500 blocks
+2026-08-14 20:20:17 | [gen]  sampled 64 blocks
+2026-08-14 20:20:18 | [score] synthetic gen8 | ppl=26.09 | entropy=1.157 nats | distinct-1..n=0.036/0.190/0.335/0.419
+2026-08-14 20:20:24 | [push] suchitg/generations-p160m/mix25/synthetic/gen8
+2026-08-14 20:20:25 | === synthetic | gen 9/10 | 500 real + 1500 synthetic blocks ===
+2026-08-14 20:26:15 | [gen]  sampled 1500 blocks
+2026-08-14 20:27:02 | [gen]  sampled 64 blocks
+2026-08-14 20:27:03 | [score] synthetic gen9 | ppl=26.22 | entropy=0.882 nats | distinct-1..n=0.041/0.161/0.249/0.300
+2026-08-14 20:27:10 | [push] suchitg/generations-p160m/mix25/synthetic/gen9
+2026-08-14 20:27:11 | === synthetic | gen 10/10 | 500 real + 1500 synthetic blocks ===
+2026-08-14 20:33:01 | [gen]  sampled 1500 blocks
+2026-08-14 20:33:48 | [gen]  sampled 64 blocks
+2026-08-14 20:33:49 | [score] synthetic gen10 | ppl=26.13 | entropy=0.726 nats | distinct-1..n=0.034/0.125/0.200/0.251
+2026-08-14 20:33:56 | [push] suchitg/generations-p160m/mix25/synthetic/gen10
+2026-08-14 20:33:57 | [run] finished 2026-08-14 20:33:57 (33.8 min) -> /research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/runs/metrics/p160m-mix25-synthetic-20260814-200010.json

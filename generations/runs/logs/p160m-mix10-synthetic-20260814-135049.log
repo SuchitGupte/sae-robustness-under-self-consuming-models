@@ -1,0 +1,29 @@
+2026-08-14 13:50:51 | [run] p160m-mix10-synthetic-20260814-135049 started 2026-08-14 13:50:49 | 1 visible GPU(s)
+2026-08-14 13:50:51 | [run] args: {"model": "p160m", "generations": 10, "resume_gen": 0, "repo": "suchitg/generations-p160m", "real_percent": 10.0, "lineage": "synthetic", "run_name": "p160m-mix10-synthetic-20260814-135049", "tmp_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/tmp", "dataset": "monology/pile-uncopyrighted", "dataset_config": "default", "split": "train", "text_column": "text", "seq_len": 512, "blocks_per_gen": 2000, "eval_blocks": 100, "metric_blocks": 64, "max_ngram": 4, "epochs": 1.0, "lr": 1e-05, "batch_size": 4, "grad_accum": 4, "grad_ckpt": false, "device_map": null, "gen_batch_size": 16, "temperature": 1.0, "top_p": 1.0, "out_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/runs", "seed": 0, "bf16": true, "tag": "mix10", "is_gemma": false, "device": "cuda"}
+2026-08-14 13:51:20 | [data] real pool: 20100 blocks of 512 tokens
+2026-08-14 13:51:38 | [gen]  sampled 64 blocks
+2026-08-14 13:51:39 | [score] synthetic gen0 | ppl=26.90 | entropy=3.178 nats | distinct-1..n=0.160/0.654/0.856/0.923
+2026-08-14 13:51:40 | === synthetic | gen 1/10 | 200 real + 1800 synthetic blocks ===
+2026-08-14 13:59:23 | [gen]  sampled 1800 blocks
+2026-08-14 14:00:16 | [gen]  sampled 64 blocks
+2026-08-14 14:00:17 | [score] synthetic gen1 | ppl=26.50 | entropy=2.509 nats | distinct-1..n=0.106/0.507/0.710/0.791
+2026-08-14 14:00:24 | [push] suchitg/generations-p160m/mix10/synthetic/gen1
+2026-08-14 14:00:25 | === synthetic | gen 2/10 | 200 real + 1800 synthetic blocks ===
+2026-08-14 14:08:45 | [gen]  sampled 1800 blocks
+2026-08-14 14:09:39 | [gen]  sampled 64 blocks
+2026-08-14 14:09:40 | [score] synthetic gen2 | ppl=26.57 | entropy=1.903 nats | distinct-1..n=0.081/0.384/0.567/0.649
+2026-08-14 14:09:46 | [push] suchitg/generations-p160m/mix10/synthetic/gen2
+2026-08-14 14:09:47 | === synthetic | gen 3/10 | 200 real + 1800 synthetic blocks ===
+2026-08-14 14:18:04 | [gen]  sampled 1800 blocks
+2026-08-14 14:18:57 | [gen]  sampled 64 blocks
+2026-08-14 14:18:58 | [score] synthetic gen3 | ppl=26.54 | entropy=1.663 nats | distinct-1..n=0.081/0.352/0.507/0.587
+2026-08-14 14:19:04 | [push] suchitg/generations-p160m/mix10/synthetic/gen3
+2026-08-14 14:19:05 | === synthetic | gen 4/10 | 200 real + 1800 synthetic blocks ===
+2026-08-14 14:27:15 | [gen]  sampled 1800 blocks
+2026-08-14 14:28:20 | [gen]  sampled 64 blocks
+2026-08-14 14:28:20 | [score] synthetic gen4 | ppl=26.18 | entropy=1.368 nats | distinct-1..n=0.070/0.283/0.414/0.490
+2026-08-14 14:28:27 | [push] suchitg/generations-p160m/mix10/synthetic/gen4
+2026-08-14 14:28:28 | === synthetic | gen 5/10 | 200 real + 1800 synthetic blocks ===
+2026-08-14 14:36:01 | [gen]  sampled 1800 blocks
+2026-08-14 14:36:50 | [gen]  sampled 64 blocks
+2026-08-14 14:36:51 | [score] synthetic gen5 | ppl=26.56 | entropy=1.143 nats | distinct-1..n=0.046/0.220/0.340/0.412

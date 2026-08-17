@@ -1,0 +1,27 @@
+2026-08-14 13:43:15 | [run] p160m-mix0-real-20260814-134315 started 2026-08-14 13:43:15 | 1 visible GPU(s)
+2026-08-14 13:43:15 | [run] args: {"model": "p160m", "generations": 10, "resume_gen": 5, "repo": "suchitg/generations-p160m", "real_percent": 0.0, "lineage": "real", "run_name": "p160m-mix0-real-20260814-134315", "tmp_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/tmp", "dataset": "monology/pile-uncopyrighted", "dataset_config": "default", "split": "train", "text_column": "text", "seq_len": 512, "blocks_per_gen": 2000, "eval_blocks": 100, "metric_blocks": 64, "max_ngram": 4, "epochs": 1.0, "lr": 1e-05, "batch_size": 4, "grad_accum": 4, "grad_ckpt": false, "device_map": null, "gen_batch_size": 16, "temperature": 1.0, "top_p": 1.0, "out_dir": "/research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/runs", "seed": 0, "bf16": true, "tag": "mix0", "is_gemma": false, "device": "cuda"}
+2026-08-14 13:43:42 | [data] real pool: 20100 blocks of 512 tokens
+2026-08-14 13:43:51 | [init] resumed real at gen5
+2026-08-14 13:44:08 | [gen]  sampled 64 blocks
+2026-08-14 13:44:08 | [score] real gen5 | ppl=25.97 | entropy=2.332 nats | distinct-1..n=0.114/0.522/0.722/0.802
+2026-08-14 13:44:09 | === real | gen 6/10 | 2000 real + 0 synthetic blocks ===
+2026-08-14 13:45:02 | [gen]  sampled 64 blocks
+2026-08-14 13:45:03 | [score] real gen6 | ppl=25.73 | entropy=2.405 nats | distinct-1..n=0.104/0.524/0.718/0.781
+2026-08-14 13:45:09 | [push] suchitg/generations-p160m/mix0/real/gen6
+2026-08-14 13:45:10 | === real | gen 7/10 | 2000 real + 0 synthetic blocks ===
+2026-08-14 13:46:04 | [gen]  sampled 64 blocks
+2026-08-14 13:46:05 | [score] real gen7 | ppl=25.79 | entropy=2.284 nats | distinct-1..n=0.103/0.508/0.696/0.773
+2026-08-14 13:46:12 | [push] suchitg/generations-p160m/mix0/real/gen7
+2026-08-14 13:46:13 | === real | gen 8/10 | 2000 real + 0 synthetic blocks ===
+2026-08-14 13:47:06 | [gen]  sampled 64 blocks
+2026-08-14 13:47:07 | [score] real gen8 | ppl=26.02 | entropy=2.414 nats | distinct-1..n=0.124/0.552/0.740/0.809
+2026-08-14 13:47:14 | [push] suchitg/generations-p160m/mix0/real/gen8
+2026-08-14 13:47:15 | === real | gen 9/10 | 2000 real + 0 synthetic blocks ===
+2026-08-14 13:48:18 | [gen]  sampled 64 blocks
+2026-08-14 13:48:19 | [score] real gen9 | ppl=25.86 | entropy=2.284 nats | distinct-1..n=0.109/0.520/0.716/0.795
+2026-08-14 13:48:26 | [push] suchitg/generations-p160m/mix0/real/gen9
+2026-08-14 13:48:27 | === real | gen 10/10 | 2000 real + 0 synthetic blocks ===
+2026-08-14 13:49:19 | [gen]  sampled 64 blocks
+2026-08-14 13:49:19 | [score] real gen10 | ppl=26.13 | entropy=2.380 nats | distinct-1..n=0.107/0.516/0.709/0.781
+2026-08-14 13:49:26 | [push] suchitg/generations-p160m/mix0/real/gen10
+2026-08-14 13:49:27 | [run] finished 2026-08-14 13:49:27 (6.2 min) -> /research/nfs_khalili_17/gupte.31/selfconsuming/sae-robustness-under-self-consuming-models/generations/runs/metrics/p160m-mix0-real-20260814-134315.json

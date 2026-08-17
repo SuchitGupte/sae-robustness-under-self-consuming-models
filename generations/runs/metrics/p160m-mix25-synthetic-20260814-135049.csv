@@ -1,0 +1,5 @@
+run_name,date,time,timestamp,model,lineage,generation,real_percent,real_loss,perplexity,output_entropy_nats,output_entropy_bits,distinct_1,distinct_2,distinct_3,distinct_4
+p160m-mix25-synthetic-20260814-135049,2026-08-14,13:51:20,2026-08-14T13:51:20,EleutherAI/pythia-160m-deduped,synthetic,0,25.0,3.29206,26.8982,3.177778,4.584565,0.160034,0.654201,0.856158,0.92255
+p160m-mix25-synthetic-20260814-135049,2026-08-14,14:04:34,2026-08-14T14:04:34,EleutherAI/pythia-160m-deduped,synthetic,1,25.0,3.275671,26.461,2.664662,3.844295,0.124237,0.558158,0.773713,0.85695
+p160m-mix25-synthetic-20260814-135049,2026-08-14,14:18:37,2026-08-14T14:18:37,EleutherAI/pythia-160m-deduped,synthetic,2,25.0,3.270524,26.3251,2.538024,3.661595,0.096954,0.519814,0.75867,0.847771
+p160m-mix25-synthetic-20260814-135049,2026-08-14,14:30:59,2026-08-14T14:30:59,EleutherAI/pythia-160m-deduped,synthetic,3,25.0,3.265078,26.1822,2.217072,3.198559,0.073761,0.419918,0.65242,0.748434

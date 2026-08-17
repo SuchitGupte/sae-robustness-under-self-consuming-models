@@ -1,0 +1,43 @@
+{
+  "run_name": "p160m-mix50-synthetic-20260814-171017",
+  "run_started_date": "2026-08-14",
+  "run_started_time": "17:10:17",
+  "checkpoints": [
+    {
+      "run_name": "p160m-mix50-synthetic-20260814-171017",
+      "date": "2026-08-14",
+      "time": "17:10:44",
+      "timestamp": "2026-08-14T17:10:44",
+      "model": "EleutherAI/pythia-160m-deduped",
+      "lineage": "synthetic",
+      "generation": 4,
+      "real_percent": 50.0,
+      "real_loss": 3.263133,
+      "perplexity": 26.1313,
+      "output_entropy_nats": 1.730978,
+      "output_entropy_bits": 2.497273,
+      "distinct_1": 0.067535,
+      "distinct_2": 0.343383,
+      "distinct_3": 0.510723,
+      "distinct_4": 0.585492
+    },
+    {
+      "run_name": "p160m-mix50-synthetic-20260814-171017",
+      "date": "2026-08-14",
+      "time": "17:15:35",
+      "timestamp": "2026-08-14T17:15:35",
+      "model": "EleutherAI/pythia-160m-deduped",
+      "lineage": "synthetic",
+      "generation": 5,
+      "real_percent": 50.0,
+      "real_loss": 3.260091,
+      "perplexity": 26.0519,
+      "output_entropy_nats": 1.748044,
+      "output_entropy_bits": 2.521894,
+      "distinct_1": 0.076996,
+      "distinct_2": 0.354269,
+      "distinct_3": 0.528585,
+      "distinct_4": 0.602499
+    }
+  ]
+}
